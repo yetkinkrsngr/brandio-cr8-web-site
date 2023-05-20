@@ -332,17 +332,27 @@ height: 50px;
 }
 .cre8-btn{
     border: 5px solid white;
+    border-radius:10px;
+    background-color:#393E46;
+    font-size: 1.4rem;
+    font-weight: 500;
     padding: 1.3rem 3.7rem 1rem;
     margin-top: 25px;
     margin-bottom: 80px;
 }
-.cre8-btn:hover{
-    background-color: white;
-    color: #232931 !important ;
+.cre8-btn a{
+    display: block;
+    color: var(--white);
     text-decoration: none;
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.3s ease-in-out 0s, opacity 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.cre8-btn:hover , cre8-btn a{
+    background-color: white;
+    color: #232931 ;
+    /* visibility: visible;
+    opacity: 1; */
+    /* transition: all 0.3s ease-in-out 0s, opacity 0.8s cubic-bezier(0.5, 0, 0, 1) 0s; */
 }
 
 .satisf-header{
