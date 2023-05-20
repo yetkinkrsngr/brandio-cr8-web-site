@@ -1,0 +1,422 @@
+
+ :root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --font-family-lale: 'Lalezar', cursive;
+    --font-family-comfor: 'Comfortaa', cursive;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-sans-serif);
+    font-size: 16px;
+    min-width: 100vh;
+}
+
+.header{
+    background-color: #232931;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content{
+    background-color: #232931;
+    height: 100%;
+    width: 100%;
+    grid-column: 1/span2;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 0 30px;
+   
+}
+.logo{
+    margin-left: 50px;
+}
+.nav-bar ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-family: var(--font-family-lale);
+    font-size: 2rem;
+    justify-content: center;
+    /* position: fixed;
+    top: 0;
+		width: 100%;
+		z-index: 10000;
+		width: 100%;
+		left:0;
+		right: 0;  
+		z-index: 99999;
+        */
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: var(--white);
+}
+.nav-bar ul li a:hover{
+    color: var(--gray);
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-top: 30px;
+    font-family: var(--font-family-lale);
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white); 
+}
+.social a{
+    text-decoration: none;
+    color: var(--white);
+}
+.social a:hover{
+    color: var(--gray);
+}
+.user-text{
+    font-family: var(--font-family-lale);
+    font-size: 6rem;
+    font-weight: 500;
+    text-align: center;
+    width: 700px;
+    line-height:80px;
+    margin-top: 30px;
+} 
+.user-text span{
+    color:#4ECCA3;
+}
+.section-grid{   
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+}
+
+.logo-marks {
+    background-color: #EEEEEE;     
+    font-family: var(--font-family-lale);
+    padding: 50px;
+}
+.logo-user {
+    background-color:#4ECCA3;
+}
+.logo-marks h1 {
+    color: #232931;
+   font-size: 3.2rem;
+   font-weight: 500;
+   width: 350px;
+   line-height: 50px;
+   margin-left: 40px;
+   margin-top: 100px;
+}
+.list-marks{
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.list-marks li{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.66);
+}
+.huble{
+   background-image: url(./img/img1.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+    color: #fff;
+    font-family: var(--font-family-comfor);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px;
+}
+.huble a {
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+
+    background-color: var(--cyan);
+    opacity: .1;
+}
+.huble a:hover{
+    opacity: .5;
+}
+.header-huble{
+    text-align: center;
+    position: relative;
+    top: px;
+    line-height: 10px;
+    z-index: 1000;
+}
+.header-huble h1{
+    font-family: var(--font-family-lale);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.header-huble p{
+    font-size: 1.2rem;
+
+}
+
+.uiux{
+    background-image: url(./img/img2.png);
+} 
+.frontend{
+    background-color: #232931;
+}
+.frontend h1{
+    color: var(--white);
+}
+.frontend .list-marks ul li{
+    color:rgba(216, 216, 216, 0.66) ;
+}
+.package{
+    background-color:  #393E46;
+}
+.package h1{
+    color: var(--white);
+}
+.package .list-marks ul li{
+    color:rgba(216, 216, 216, 0.66) ;
+}
+.development{
+    background-image: url(./img/img3.png);
+}
+.last-box{
+    background-image: url(./img/img4.png);
+}
+
+.winning{
+    grid-column: 1/span 2;
+    background-color:#232931;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.win-header {
+    color: var(--white);
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: var(--font-family-lale);
+    width: 900px;
+    text-align: center;
+    line-height: 80px;
+    margin-bottom:0;
+}
+.win-header span{
+    color: #4ECCA3;
+}
+.win-subheader{
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-family: var(--font-family-comfor);
+    text-align: center;
+    width: 800px;
+    margin-top: 15px;
+    line-height: 40px;
+}
+
+.win-btn{
+    display: inline-block;
+    border: 5px solid #4ECCA3;
+    border-radius: 50px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-family: var(--font-family-lale);
+    padding: 1.3rem 2.1rem 1rem;
+}
+.win-btn a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    font-weight: 500;
+  
+}
+.win-btn:hover{
+    background-color: #4ECCA3;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out 0s, opacity 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;
+}
+
+.clients{
+    grid-column: 1/span 2;  
+    padding: 10px 100px;
+}
+.clients-header{
+    color: #000;
+    width: 500px;
+    font-family: var(--font-family-lale);
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 50px;
+}
+.clients-subheader{
+color: rgba(0, 0, 0, 0.66);
+font-size: 1.3rem;
+font-weight: 300;
+font-family: var(--font-family-comfor);
+width: 1000px;
+height: 100px;
+margin-top: -20px;
+line-height: 40px;
+}
+.img-logo{
+width: 800px;
+margin-top: 50px;
+margin-bottom: 80px;
+display: flex;
+flex-wrap: wrap;
+gap: 40px;
+justify-content: space-around;
+}
+.img-logo img{
+width: 150px;
+height: 50px;
+}
+
+.project-us{
+    background-color: #393E46;
+}
+.cr8-header{
+    width: 600px;
+    font-weight: 400;
+    line-height: 60px;
+}
+.cr8-subheader{
+    width: 550px;
+}
+.cre8-btn{
+    border: 5px solid white;
+    padding: 1.3rem 3.7rem 1rem;
+    margin-top: 25px;
+    margin-bottom: 80px;
+}
+.cre8-btn:hover{
+    background-color: white;
+    color: #232931 !important ;
+    text-decoration: none;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out 0s, opacity 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;
+}
+
+.satisf-header{
+    width: 800px;
+    color: #4ECCA3;
+    margin-top: 100px;
+}
+.satisf-subheader{
+    margin-top: 50px;
+    width: 700px;
+}
+
+.contact-fot{
+    grid-column: 1/span 2;
+    background-color:#232931;
+    display: flex;
+    justify-content: space-around;
+}
+
+.call{
+    width: 50%;
+    margin-left: 30px;
+    margin-bottom: 200px;
+}
+.call p {
+    font-family: var(--font-family-lale);
+    font-size: 1.6rem;
+    color: #777A80;
+    
+    margin-left: 90px;
+    margin-bottom: 0;
+}
+.call-header{
+    font-family: var(--font-family-lale);
+    font-weight: 500;
+    font-size: 4rem;
+    color: var(--white);
+    margin-left: 90px;
+    margin-top: 0;
+}
+.email{
+    width: 50%;
+    margin-bottom: 200px;
+  
+}
+.email p {
+    font-family: var(--font-family-lale);
+    font-size: 1.6rem;
+    color: #777A80;
+    margin-left: 80px;
+    margin-bottom: 0;
+}
+.mail{
+    font-family: var(--font-family-lale);
+    font-weight: 500;
+    font-size: 4rem;
+    color: var(--white);
+    margin-left: 80px;
+    margin-top: 0;
+    text-decoration: none;
+}
+.mail:hover{
+    color: #4ECCA3;
+}
+.sosial{
+    font-size: 1.2rem;
+    font-family: var(--font-family-lale);
+    margin-left: 70px;
+}
+.sosial a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+.sosial a:hover{
+    color: #777A80;
+}
